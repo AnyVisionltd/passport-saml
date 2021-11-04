@@ -1,5 +1,5 @@
 {
-  "name": "passport-saml",
+  "name": "@oosto/passport-saml",
   "version": "3.0.0",
   "description": "SAML 2.0 authentication strategy for Passport",
   "keywords": [
@@ -10,14 +10,10 @@
   ],
   "repository": {
     "type": "git",
-    "url": "https://github.com/node-saml/passport-saml.git"
+    "url": "git+https://github.com/node-saml/passport-saml.git"
   },
   "license": "MIT",
-  "author": {
-    "name": "Henri Bergius",
-    "email": "henri.bergius@iki.fi",
-    "url": "http://bergie.iki.fi"
-  },
+  "author": "Henri Bergius <henri.bergius@iki.fi> (http://bergie.iki.fi)",
   "contributors": [
     "Michael Bosworth",
     "Herbert Vojčík",
@@ -85,5 +81,14 @@
   },
   "engines": {
     "node": ">= 12"
+  },
+  "bugs": {
+    "url": "https://github.com/node-saml/passport-saml/issues"
+  },
+  "homepage": "https://github.com/node-saml/passport-saml#readme",
+  "directories": {
+    "doc": "docs",
+    "lib": "lib",
+    "test": "test"
   }
 }
