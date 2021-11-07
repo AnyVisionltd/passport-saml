@@ -1,6 +1,6 @@
 {
   "name": "@anyvision/passport-saml",
-  "version": "3.0.0",
+  "version": "3.0.2-beta.0",
   "description": "SAML 2.0 authentication strategy for Passport",
   "keywords": [
     "saml",
@@ -49,7 +49,7 @@
     "registry": "https://anyvision.jfrog.io/anyvision/api/npm/npm/"
   },
   "dependencies": {
-    "@anyvision/node-saml": "*",
+    "@anyvision/node-saml": "3.0.2-beta.1",
     "passport-strategy": "^1.0.0"
   },
   "devDependencies": {
