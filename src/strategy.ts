@@ -65,7 +65,7 @@ export abstract class AbstractStrategy extends PassportStrategy {
 
           const RelayState =
             (req.query && req.query.RelayState) || (req.body && req.body.RelayState);
-          return this._saml.getLogoutResponseUrl(profile, RelayState, options, redirectIfSuccess);
+          return this._saml.getLogoutResponseUrl(profile, RelayState, options, true, redirectIfSuccess);
         }
         return this.pass();
       }
@@ -104,7 +104,7 @@ export abstract class AbstractStrategy extends PassportStrategy {
     if (req.query && (req.query.SAMLResponse || req.query.SAMLRequest)) {
       const originalQuery = url.parse(req.url).query;
       this._saml
-        .validateRedirectAsync(req.query, originalQuery)
+        .validateRedirectAsync(req.query, originalQuery as string)
         .then(validateCallback)
         .catch((err) => this.error(err));
     } else if (req.body && req.body.SAMLResponse) {

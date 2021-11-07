@@ -3,7 +3,7 @@ import { MultiSamlStrategy } from "./multiSamlStrategy";
 
 import type { VerifiedCallback, VerifyWithRequest, VerifyWithoutRequest } from "./types";
 
-export * from "node-saml";
+export * from "@anyvision/node-saml";
 
 export {
   AbstractStrategy,
